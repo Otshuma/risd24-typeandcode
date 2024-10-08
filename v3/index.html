@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part3</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 10px;
+        font-family: "Kanit";
+    }
+
+    /* color hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    h1 {
+        margin-bottom: 100px;
+        background-color: yellow;
+        padding: 20px;
+        font-family: sans-serif; 
+    }
+    
+    h2 {
+        max-width: 0;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 0px;
+        font-family: "Kanit";
+        font: weight 300;  
+        font-size: 50px;
+        border-radius: 0px;
+    }
+
+    h3 {
+        max-width: 0;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        margin: 0px;
+        font-family: "Kanit";
+        font: weight 600px;  
+        font-size: 100px;
+        border-radius: 0px;
+    }
+
+    h4 {
+        max-width: 1000;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        margin: 0px;
+        font-family: "Kanit";
+        font-weight: 200;  
+        font-size: 35px;
+        border-radius: 0px;
+    }
+    
+    h5 {
+        max-width: 800;
+        background-color: rgb(255, 255, 255);
+        margin: 0px;
+        font-family: "Kanit";
+        font-weight: 200;  
+        font-size: 12px;
+        border-radius: 0px;
+    }
+
+    p {
+        max-width: 1000;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 0px;
+        font-family: "Kanit";
+        font-weight: 200;  
+        font-size: 20px;
+        border-radius: 0px;
+    }
+   
+
+    p:hover {
+        border-radius: 0px;
+        color:rgb(200, 70, 47);
+    }
+    
+    img{
+        display:block;
+        width: 100%;
+    }
+    
+    .hippo img{
+        transform:scale(1.2) rotate(0deg);
+        
+    }
+
+   .catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        gap: 5px;
+        font-family: "Kanit";
+   }
+ 
+   @media only screen and (max-width:800px) {
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+   }
+  
+   .card {
+    background-color: rgb(232, 231, 236);
+    padding: 0px;
+    border-radius: 2px;
+    font-family: "Kanit";
+
+   }
+
+   .card a {
+    background-color: rgb(116, 116, 116);
+    display: block;
+    text-align:left;
+   }
+
+   .card p {
+    font-family:"Kanit";
+      
+    }
+   
+    /* flex box 2 */
+    .card h2 {
+        font-family: "Kanit";
+        font-size: 0;
+    }
+
+   /* Create three unequal columns that floats next to each other */
+    .column {
+        float: left;
+        padding: 30px;
+    }
+
+    /* Left and right column */
+    .column.side {
+        width: 20%;
+    }
+
+    /* Middle column */
+    .column.middle {
+         width: 55%;
+    }
+
+    /* Clear floats after the columns */
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+         width: 100%;
+  }
+  h3{
+ font-size: 60px;
+} 
+
+
+    /*end bar*/
+    .container2 {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+        gap: 30;
+        font-family:"Kanit";
+        padding: 20px;
+    }
+
+   
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="#">MAPPING INTELLIGENCE OF YOUR WORK</a>
+    <a href="#">JOURNEY</a>
+    <a href="#">INVENTIVE GROUPING</a>
+</div>
+
+
+<div>
+    
+    <img src="lelapa ai insta 24.jpg">
+
+</div>
+ 
+<h3>
+<em>WakwaTshuma</em>
+</h3>
+
+
+<h4>
+    I am an award-winning <strong><em>Zimbabwean</em></strong> artist, designer, art director, and typographer specialising in African-inspired themes. I am also co-founder of <strong><em>Mam'Gobozi Design Factory</em></strong>, a <strong><em>South African</em></strong> design studio celebrating Afrikan identity through design, art, and product design. My work challenges conventional approaches by calling for the decolonisation of Eurocentrism in graphic design and an ode to the beauty of celebrating Afrikan culture and heritage.
+</h4> 
+
+<div class="catalog">
+    <div class="card">
+        <img src="https://worldbranddesign.com/wp-content/uploads/2024/01/1-AFAF.jpg">
+        <a href="https://mamgobozidesign.com/"> CASE STUDY </a>
+    </div>
+
+    <div class="card">
+        <img src="https://worldbranddesign.com/wp-content/uploads/2021/06/1-TAC.jpg">
+        <a href="https://worldbranddesign.com/the-africa-centre-rebranding-designed-by-mamgobozi-design-factory/" target="_blank">CASE STUDY</a>
+    </div>
+
+</div>
+
+
+
+<div class="row"></div>
+    <div class="column side">
+      <h2>Book</h2>
+      <p><strong>Afrikan Alphabet</strong> by <em>Prof Saki Mafundikwa</em></p>
+    </div>
+    
+    <div class="column middle">
+      <h2>Journey</h2>
+      <p>I came to Rhode Island School of Design (RISD) intending to experiment more. My love for letterforms had to take a back seat; however, after a class on typeface design with Richard Lipton, I realized I had missed creating letterforms. Unlike what I used to develop before coming to RISD, Latin typeface design is about creating systems of components that seat and make all the characters in the alphabet look like one family. My letterforms, on the other hand, aren't like the Latin characters; they have their own personality as I reference African objects. So, in simple terms, I am exploring, or should I say, learning Latin typeface design.</p>
+      <p>The <strong>Typographics NY24</strong> conference only fueled the fire as I met season-typeface designers like Tobias Frere-Jones. A little background on my practice is that I am interested in ancient African knowledge (we will unpack the term 'ancient' another day). That's where I draw my inspiration from. I have been doing this process since watching Prof Saki Mafundikwa's Tedtalk, <em><strong>Ingenuity and elegance in ancient Afrikan alphabets</strong></em>, which urges young African designers to look inward into Africa for inspiration. That's what I have been doing, looking inward. Prof Saki's call was simple for me: Africa is what I have known since birth. It's not that I know all of it, but I do know some of it. It was all around me; it was what I saw going to school, and back, how our family interacted with neighbors, how I played with my friends; it was all my memories of Zimbabwe. So, the call to look inward meant observing, questioning, investigating, and researching what I don't know about Africa, and I keep doing it now.</p>
+      <p>Currently, I am trying to create typefaces that celebrate Africa, designed from African artifacts, while researching and developing a writing system for the Ndebele in Zimbabwe. This last sentence is as confusing as it comes. I am still processing everything. However, Prof Saki's call later made me realize that Africa is inside me, and looking inward also involves me creating what I like.</p>
+      <p>I collected these five personal images for my compendium last spring and stored them in a folder on my computer. I am inspired by other creatives pushing the boundaries of their art. For instance, ArtcomesFirst, a fashion duo from the United Kingdom, has a presence in the fashion industry in terms of how they create garments and sometimes address societal issues. Plus, how they dress is so cool. They are so true to who they are. This is an inner goal of mine: to create work that matters or one day leave a legacy. What would they say about my work when I am gone? Am I creating for myself or others? These are some of the questions I ask myself.</p> 
+      <br>
+      <h4><em><strong>I usually get motivated when the work is aligned with my core beliefs.</strong></em></h4>
+      <br>
+      <p>Samuel Ross graduated as a graphic designer; however, he has transcended spaces as he is now famously known as a fashion and industrial designer, just like Virgil Abloh. I also don’t want to be just a graphic designer; I have ideas for toys, a stool design, fabric patterns, and so many ideas.</p> <p>Daan Rietbergen’s typographic work questions whether legibility is important in typeface design, a space I find myself in every time I start designing a typeface. Christine Espinal’s furniture made me think about all the products I want to make. Even after designing a logo for a client, I usually find myself thinking about how that icon might look like if it was 3D or if it was a furniture piece. Thanks to RISD resources, I was able to take an introduction to furniture design during the winter session, and I finally got to make my first wooden functioning stool and table designed and made by me. I repeat designed and made by me. A ground moment for myself as it was the first time working with wood, working with materials. I truly felt like Ross and Abloh breaking the boundaries of what creatives should be. </p>
+    </div>
+    
+    <div class="column side">
+        <img src="DSC_0868.jpg">
+      <h5>Fig 1: Artcomesfirst</h5>
+      <br>
+      <img src="Samuel-Ross-LS-9.jpg">
+      <h5>Fig 2: Samuel Ross by Gabriel Moses</h5>
+      <br>
+      <img src="absent-2880x1920-1920x.jpg">
+      <h5>Fig 3: Artworks by Daan Rietbergen</h5>
+
+      <img src="Christine Espinal 3.JPG">
+      <h5>Fig 4: Mesa Tres/ Three Table by Christine Espinal</h5>
+</div>
+
+<img src="AAA.jpg">
+
+<div class="row"></div>
+    <div class="column side">
+      <h2></h2>
+      <p><strong></strong>  <em></em></p>
+    </div>
+    
+    <div class="column middle">
+      <h2>InventiveGrouping</h2>
+      <p><em><strong>BMW 525i</strong></em> is a hand-painted model by Ndebele artist <strong>Esther Mahlangu</strong> in 1991. The car is painted with colourful Ndebele patterns around it, even on top, rear view mirrors, and the wheels. The painting was done using a bird feather, according to the teachings she received as a child from her mother and grandmother.</p>
+
+        <p><em><strong>IKwekwezi rebranding</strong></em> is a branding project done by <strong>Osmond Tshuma</strong> while he was still working at Openco. The work consists of a logo design visible on the front of the business card, while the back of the business card shows various Ndebele patterns in various colours. The logo itself looks like a Ndebele pattern.</p>
+        
+        <p>Art imitates life; this is evident in both Mahlangu and Tshuma's work. Mahlangu is from the Southern Ndebele people of South Africa, while Tshuma is from the Northern Ndebele people of Zimbabwe. Each artist celebrates their culture, the Ndebele culture, unapologetically proud. The Ndebele murals used to adorn rural homesteads; however, the artists have transcended that art form into other commercial spaces. The murals were painted by the dwellers of that homestead, marking their homes, or a message to some. With these artworks the artists challenge Africans to view themselves as who they are not from a foreign lens.</p>
+        
+        <p>The Ndebele station IKwekwezi rebranding challenges the minimalist approach to branding and looks inward into the brand's heart and speaks to the Ndebele people, the same as the BMW 525i. Each artist work claims ownership of its culture and re-establishes themselves as custodians of that culture. Both artworks also reinforce arguments by various scholars like Prof Saki Mafundikwa that design has always been part of the African history. </p>
+    </div>
+    
+    <div class="column side">
+        <img src="WhatsApp-Image-2024-09-23-at-10.02.54.jpg">
+      <h5>Fig 5: Esther Mahlangu, Suid Afrika Vorentoe (South Africa Ahead), 2003 (South African National Gallery Collection) and Art Car: BMW 525i, 1991 (wallpaper). Photo taken by Osmond Tshuma (Cape Town)</h5>
+      <br>
+      <img src="IKwekwezi fm 5.jpg">
+      <h5>Fig 6: Osmond Tshuma (while at Openco), IKwekwezi rebranding, South Africa, 2015</h5>
+      <br>
+</div>
+
+
+
+
+
+
+</body>
+</html>
